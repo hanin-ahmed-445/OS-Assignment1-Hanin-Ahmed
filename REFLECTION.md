@@ -7,9 +7,14 @@ Answer the following questions about your learning experience. Each answer shoul
 
 ## Question 1: What did you learn about multithreading?
 
-**Your Answer:**
+**Your Answer: **
 
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
+[1. I learned how to use Java's Runnable interface to create and manage threads.
+2. I discovered that several threads can mimic a single CPU's concurrent operation.Third. 
+3. I learned about the various states of the thread lifecycle, including New, Runnable, Running, and Terminated.
+4. I was aware of Thread's function.start() at the start of the thread's execution.join() in thread synchronisation.
+5. I discovered how Round-Robin and other scheduling algorithms guarantee equitable CPU time distribution among threads.
+6. I gained a better comprehension of thread synchronisation and handling several processes in actual programming.]
 
 ---
 
@@ -17,7 +22,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe the specific challenge. Was it understanding the code? Implementing a feature? Using Git? Explain what made it difficult and how it relates to the course concepts.]
+[Managing the reordering of processes inside the list and comprehending the dynamics of the scheduler's activity with programming threads were the main problems of the project. It took a lot of work to implement the "wait time" feature in order to guarantee exact timing and prevent logical contradictions. All in all, it was a rich experience that blended technical expertise with logical reasoning.]
 
 ---
 
@@ -25,7 +30,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
+[I overcame these obstacles by connecting theoretical OS concepts to the source code and decomposing difficult issues into manageable chunks. Complex software behaviours, especially in multithreading, were made clear by using debugging techniques and instructional tutorials. The confidence needed to properly alter and optimise the code was developed through this iterative learning technique.]
 
 ---
 
@@ -33,7 +38,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Give specific examples from real applications you use (web browsers, games, mobile apps, etc.). Explain why threads are useful in those scenarios. Connect to what you learned in this assignment.]
+[In reality, multithreading improves a number of applications: games utilise it to execute parallel tasks like graphics and input, servers use it to handle high-concurrency requests, and browsers use it for tab isolation. Additionally, media applications employ it to keep playback streams and user interface controls apart. This project demonstrated how threading enhances efficiency and responsiveness while emphasising the function of scheduling in guaranteeing equitable CPU distribution.]
 
 ---
 
