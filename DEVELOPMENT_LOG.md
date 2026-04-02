@@ -29,71 +29,76 @@ Document your development process as you work on the assignment. Add entries sho
 **Time spent**: 30 minutes
 
 ---
+*** مهم ***
+واجهتني مشكلة بنسختي الاولى واضطريت اني احذفها واسوي نسخه ثانيه لضيق الوقت وعدم الخبره لذلك ال commit اوقاتها متقاربه جدا بحيث اني كنت اعرف الاجابه من قبل وحالته بس حذفته انا كاتبه الوقت الحقيقي اللي استغرقته في حلها في المثال بالاسفل وجب التوضيح عشان في تناقض باجابتي سويت commit ورا بعض لكن استغرقت وقت كثير في الايام السابقه لحله
 
 ## Your Development Log:
 
-### Entry 1 - [Date and Time]
-**What I did**: 
+### Entry 1 - [April 2, 2026, 12 PM]
+**What I did**: set up GitHub
 
 **Details**: 
+1- create account
+2- forked Dr.mahdi repository
+3- Editing the fork
 
-**Challenges**: 
+**Challenges**: i was a beginner and didn't know how to do it on my first time 
 
-**Solution**: 
+**Solution**: i watched many video and ask my sis
 
-**Time spent**: 
+**Time spent**: 30 min
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**: 
+### Entry 2 - [April 2, 2026, 12 PM]
+**What I did**: Code Review and Logic Mapping
 
-**Details**: 
+**Details**: examining the fundamental elements of the simulation, particularly the integration between SchedulerSimulation and the Process class. I was able to see the concurrency model in action and successfully draw out the Round-Robin scheduling mechanism. In order to track the dispatch and execution of threads, I also carried out step-by-step debugging.
 
-**Challenges**: 
+**Challenges**: Complexity in understanding thread-to-queue synchronization and interaction.
 
-**Solution**: 
+**Solution**: Conducted a deep dive into the code while applying OS principles regarding queue management.
 
-**Time spent**: 
-
----
-
-### Entry 3 - [Date and Time]
-**What I did**: 
-
-**Details**: 
-
-**Challenges**: 
-
-**Solution**: 
-
-**Time spent**: 
+**Time spent**: 1;30 hour
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**: 
+### Entry 3 - [April 2, 2026, 12:30 PM]
+**What I did**: Added priority-based scheduling to the Process class.
 
-**Details**: 
+**Details**: I updated the Process class by adding a priority attribute and enhanced the SchedulerSimulation logic to sort the queue by importance, ensuring through rigorous testing that high-priority threads are executed before lower ones.
 
-**Challenges**: 
+**Challenges**: lack of experience
 
-**Solution**: 
+**Solution**: searched online
 
-**Time spent**: 
+**Time spent**: 2 hours
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**: 
+### Entry 4 - [April 2, 2026, 1:10 PM]
+**What I did**: Implemented a Context Switch Counter to monitor scheduler performance.
 
-**Details**: 
+**Details**: In order to monitor thread transitions and assess the overhead and effectiveness of the scheduling method across multiple test runs, I incorporated a Context Switch Counter into the SchedulerSimulation.
 
-**Challenges**: 
+**Challenges**: Determining the exact location in the code to trigger the counter for each process change.
 
-**Solution**: 
+**Solution**: Placed the counter increment right after polling a new thread from the ready queue.
 
-**Time spent**: 
+**Time spent**: 3 hour
+
+---
+
+### Entry 5 - [April 2, 2026, 2:12 PM]
+**What I did**: Implemented Waiting Time calculation for each process.
+
+**Details**: In order to enable the system to compute individual and average waiting times by taking into account the amount of time a thread spends idling in the ready queue, I added logic to track arrival and finish times for each process.
+
+**Challenges**:  I didn't know how to calculate the waiting time correctly when a process is interrupted and sent back to the queue.
+
+**Solution**:  I searched for the formula and found that I should subtract the Burst Time from the Total Time spent in the system.
+
+**Time spent**: 1 hour
 
 ---
 
@@ -112,10 +117,10 @@ Document your development process as you work on the assignment. Add entries sho
 
 ## Summary
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [About 8 hours]
 
-**Most challenging part**: 
+**Most challenging part**: As a beginner, I found it very difficult to follow the code logic. My limited experience made it hard to understand how the scheduler and threads work together at the same time.
 
-**Most interesting learning**: 
+**Most interesting learning**: I found it most fascinating to observe how the computer truly "thinks" and handles jobs. Even though I'm just getting started with programming, it was a wonderful feeling to realise that I could comprehend and even alter how the scheduler operates.
 
-**What I would do differently next time**: 
+**What I would do differently next time**: The next time, I would plan ahead and sketch the reasoning before writing any code. As a novice, I discovered that comprehending the flow first makes the programming portion more simpler and less perplexing.
